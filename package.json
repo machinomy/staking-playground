@@ -1,0 +1,22 @@
+{
+  "name": "staking-playground",
+  "version": "0.0.1",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "rm -rf .cache && parcel build *.html",
+    "start": "parcel *.html"
+  },
+  "browserslist": [
+    "since 2018-12"
+  ],
+  "dependencies": {
+    "@ledgerhq/hw-transport-webusb": "^4.64.0",
+    "@ledgerhq/hw-transport-u2f": "^4.64.0",
+    "@ledgerhq/hw-transport-webauthn": "^4.64.0",
+    "cosmos-delegation-js": "^0.2.1"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}

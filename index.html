@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+    <title>Staking playground</title>
+</head>
+<body>
+<div class="content">
+  <h2 class="header">COSMOS staking playground</h2>
+  <div class="ui segment cosmos-content">
+    <h3>Ledger info</h3>
+    <div class="ledger-path-block">
+      <span class="ledger-path"></span>
+    </div>
+    <div class="ledger-pubkey-block">
+      <span class="ledger-pubkey"></span>
+    </div>
+    <div class="ledger-address-block">
+      <span class="ledger-address"></span>
+    </div>
+    <div class="ledger-balance-block">
+      <span class="ledger-balance"></span>
+    </div>
+
+    <h3>Stake</h3>
+    <div class="ui labeled input fluid">
+        <div class="ui label">
+            Amount (in ATOMS, not uAtoms)
+        </div>
+        <input class="input-amount" type="text">
+    </div>
+    <div class="ui labeled input fluid">
+      <div class="ui label">
+        Validator address
+      </div>
+      <input class="input-validator-address" type="text">
+    </div>
+    <br/>
+    <div class="button-stake-block">
+      <button class="ui button primary button-stake">Stake</button>
+    </div>
+    <br/>
+    <div class="stake-info-block">
+      <span class="stake-info"></span>
+    </div>
+
+    <br/>
+    <hr />
+    <h3>Unstake</h3>
+    <div class="ui labeled input fluid">
+      <div class="ui label">
+        Amount (in ATOMS, not uAtoms)
+      </div>
+      <input class="input-unstake-amount" type="text">
+    </div>
+    <div class="ui labeled input fluid">
+      <div class="ui label">
+        Validator address
+      </div>
+      <input class="input-unstake-validator-address" type="text">
+    </div>
+    <br/>
+    <div class="button-unstake-block">
+      <button class="ui button primary button-unstake">Unstake</button>
+    </div>
+    <br/>
+    <div class="unstake-info-block">
+      <span class="unstake-info"></span>
+    </div>
+
+    <br/>
+    <hr/>
+
+    <h3>Stake statistics for connected Ledger</h3>
+    <table class="delegation-table ui celled table">
+      <thead>
+      <tr>
+        <th>Validator</th>
+        <th>How much</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+<script src="index.js" type="text/javascript"></script>
+</html>
